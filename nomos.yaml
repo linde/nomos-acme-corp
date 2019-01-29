@@ -1,0 +1,13 @@
+apiVersion: addons.sigs.k8s.io/v1alpha1
+kind: Nomos
+metadata:
+  name: nomos-acme
+  namespace: nomos-system
+spec:
+  git:
+    syncRepo: https://source.developers.google.com/p/linde-test-project-229701/r/acme-corp
+    syncBranch: master
+    secretType: cookiefile
+    policyDir: nomos-root
+
+
