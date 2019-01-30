@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: non-prod-jumphost
   annotations:
-    nomos.dev/cluster-selector: selector-envNonProd
+    nomos.dev/namespace-selector: selector-envNonProd
 spec:
   containers:
   - name: jumphost
