@@ -4,12 +4,10 @@ metadata:
   name: jumphosts
 spec:
   groups:
-    - group: ""
+    - group: apps
       kinds:
-      - kind: Pod
+      - kind: Deployment
         hierarchyMode: inherit
         versions:
           - version: v1
-
-
             

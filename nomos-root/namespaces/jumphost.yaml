@@ -1,15 +1,25 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: non-prod-jumphost
+  name: non-prod-jumphost-deployment
   annotations:
     nomos.dev/namespace-selector: selector-envNonProd
 spec:
-  containers:
-  - name: jumphost
-    image: debian
-    command: ['sleep', 'infinity']
-    resources:
-      requests:
-        memory: "1m"
-        cpu: "1m"
+  replicas: 2
+  selector:
+    matchLabels:
+      app: non-prod-jumphost
+  template:
+    metadata:
+      labels:
+        app: non-prod-jumphost
+    spec:
+      containers:
+      - name: non-prod-jumphost
+        image: alpine
+        command: ['sleep', 'infinity']
+        resources:
+          requests:
+            memory: "1m"
+            cpu: "1m"
+        
