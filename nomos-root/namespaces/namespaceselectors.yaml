@@ -5,5 +5,6 @@ metadata:
 spec:
   selector:
     matchExpressions:                                                                                                                         
-      - {key: environment, operator: NotIn, values: [productioon]}
+      - {key: environment, operator: NotIn, values: [production]}
+
 
