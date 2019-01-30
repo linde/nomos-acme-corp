@@ -5,9 +5,8 @@ metadata:
   namespace: nomos-system
 spec:
   git:
-    syncRepo: https://source.developers.google.com/p/linde-test-project-229701/r/acme-corp
+    secretType: ssh
+    syncRepo: git@github.com:linde/nomos-acme-corp.git
     syncBranch: master
-    secretType: cookiefile
     policyDir: nomos-root
-
 
