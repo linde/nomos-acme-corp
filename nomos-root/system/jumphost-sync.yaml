@@ -7,7 +7,6 @@ spec:
     - group: ""
       kinds:
       - kind: Pod
-        hierarchyMode: inherit
         versions:
           - version: v1
 
