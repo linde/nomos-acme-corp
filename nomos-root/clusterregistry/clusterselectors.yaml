@@ -1,0 +1,10 @@
+kind: ClusterSelector
+apiVersion: nomos.dev/v1alpha1
+metadata:
+  name: selector-envNonProd
+spec:
+  selector:
+    matchExpressions:                                                                                                                         
+      - {key: environment, operator: NotIn, values: [productioon]}
+      
+

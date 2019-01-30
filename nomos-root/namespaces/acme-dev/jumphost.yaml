@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: non-prod-jumphost
+  annotations:
+    nomos.dev/cluster-selector: selector-envNonProd
+spec:
+  containers:
+  - name: jumphost
+    image: debian
+    command: ['sleep', 'infinity']
+    resources:
+      requests:
+        memory: "1m"
+        cpu: "1m"
