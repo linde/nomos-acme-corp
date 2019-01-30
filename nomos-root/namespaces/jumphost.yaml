@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: non-prod-jumphost
-        image: alpine
+        image: debian
         command: ['sleep', 'infinity']
         resources:
           requests:
