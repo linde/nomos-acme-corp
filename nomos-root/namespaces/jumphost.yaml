@@ -5,7 +5,7 @@ metadata:
   annotations:
     nomos.dev/namespace-selector: selector-envNonProd
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: non-prod-jumphost
