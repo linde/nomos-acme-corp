@@ -4,6 +4,7 @@ metadata:
   name: nomos-acme
   namespace: nomos-system
 spec:
+  enableHierarchicalResourceQuota: true
   git:
     secretType: ssh
     syncRepo: git@github.com:linde/nomos-acme-corp.git
