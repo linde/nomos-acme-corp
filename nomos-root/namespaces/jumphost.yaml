@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: non-prod-jumphost-deployment
   annotations:
-    nomos.dev/namespace-selector: selectorEnvNonProd.acme.com
+    nomos.dev/namespace-selector: selector-env-nonprod
 spec:
   replicas: 1
   selector:
