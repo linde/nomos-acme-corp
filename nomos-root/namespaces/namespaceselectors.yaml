@@ -1,7 +1,7 @@
 kind: NamespaceSelector
 apiVersion: nomos.dev/v1alpha1
 metadata:
-  name: selector-envNonProd
+  name: selectorEnvNonProd
 spec:
   selector:
     matchExpressions:                                                                                                                         
