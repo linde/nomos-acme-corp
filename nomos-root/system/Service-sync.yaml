@@ -4,7 +4,7 @@ metadata:
   name: jumphosts
 spec:
   groups:
-    - group: apps
+    - group: ""
       kinds:
       - kind: Service
         hierarchyMode: inherit
