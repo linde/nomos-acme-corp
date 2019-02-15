@@ -1,7 +1,7 @@
 kind: Sync
 apiVersion: nomos.dev/v1alpha1
 metadata:
-  name: jumphosts
+  name: pvc-sync
 spec:
   groups:
     - group: ""
