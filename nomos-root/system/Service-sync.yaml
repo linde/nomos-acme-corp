@@ -1,0 +1,13 @@
+kind: Sync
+apiVersion: nomos.dev/v1alpha1
+metadata:
+  name: jumphosts
+spec:
+  groups:
+    - group: apps
+      kinds:
+      - kind: Service
+        hierarchyMode: inherit
+        versions:
+          - version: v1
+            
