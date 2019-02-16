@@ -27,9 +27,8 @@ file.
 # Verification
 
 To verify this, use the
-[https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/#directly-accessing-the-rest-api](kubtclt
-proxy) as follows below. We used the proxy to demonstrate access to the services
-in order to preserve resources and avoid having external access to the
+[kubectl proxy](https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/#directly-accessing-the-rest-api) as follows below. We used the proxy to demonstrate access to the services
+in order to conserve resources and avoid having external access to the
 unconfigured/unsecured wordpress installations.
 
 * First, run the proxy on your console where you've been apply kubectl `$
