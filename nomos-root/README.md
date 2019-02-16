@@ -11,8 +11,7 @@ This is the root directory for GKE Policy Management for your cluster.
 
 This particular cluster is the CSP Config Manager take on the kubernetes'
 [Deploying WordPress and MySQL with Persistent Volumes wordpress/persistance
-mysql
-example](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
+mysql](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 example. In this, we sync a flattened yaml from the example and deploy it into a
 set of namespaces configured for the cluster.
 
