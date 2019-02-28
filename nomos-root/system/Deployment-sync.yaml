@@ -1,4 +1,4 @@
-kind: Deployment
+kind: Sync
 apiVersion: nomos.dev/v1alpha1
 metadata:
   name: deployment-sync
