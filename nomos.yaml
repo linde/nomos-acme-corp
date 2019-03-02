@@ -8,6 +8,6 @@ spec:
   git:
     secretType: ssh
     syncRepo: git@github.com:linde/nomos-acme-corp.git
-    syncBranch: nomos-wp-per-ns
+    syncBranch: master
     policyDir: nomos-root
 
