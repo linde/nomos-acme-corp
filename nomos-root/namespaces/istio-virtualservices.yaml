@@ -15,7 +15,7 @@ spec:
       uri: "/"
     route:
     - destination:
-        host: acme-prod.default.svc.cluster.local
+        host: wordpress.acme-prod.svc.cluster.local
         port:
           number: 80
 ---
@@ -36,7 +36,7 @@ spec:
       uri: "/"
     route:
     - destination:
-        host: acme-qa.default.svc.cluster.local
+        host: wordpress.acme-qa.svc.cluster.local
         port:
           number: 80
 ---
@@ -57,7 +57,7 @@ spec:
       uri: "/"
     route:
     - destination:
-        host: acme-dev.default.svc.cluster.local
+        host: wordpress.acme-dev.svc.cluster.local
         port:
           number: 80
 ---
