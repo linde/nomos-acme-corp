@@ -1,8 +1,8 @@
 apiVersion: addons.sigs.k8s.io/v1alpha1
-kind: Nomos
+kind: ConfigManagement
 metadata:
   name: nomos-acme
-  namespace: nomos-system
+  namespace: config-management-system
 spec:
   enableHierarchicalResourceQuota: true
   git:
