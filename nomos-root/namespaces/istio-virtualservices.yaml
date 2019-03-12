@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: wordpress
+  name: wordpress-acme-prod
 spec:
   hosts:
   - "*"
@@ -22,7 +22,7 @@ spec:
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: wordpress
+  name: wordpress-acme-qa
 spec:
   hosts:
   - "*"
@@ -43,7 +43,7 @@ spec:
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: wordpress
+  name: wordpress-acme-dv
 spec:
   hosts:
   - "*"
