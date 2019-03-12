@@ -4,3 +4,4 @@ metadata:
   name: acme-qa
   labels:
     environment: test
+    istio-injection: enabled

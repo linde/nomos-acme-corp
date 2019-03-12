@@ -4,3 +4,4 @@ metadata:
   name: acme-dev
   labels:
     environment: dev
+    istio-injection: enabled
