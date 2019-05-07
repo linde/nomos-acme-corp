@@ -8,4 +8,4 @@ spec:
   git:
     syncRepo: git@github.com:linde/nomos-acme-corp.git
     secretType: ssh
-    policyDir: "nomos-root"
+    policyDir: "config-root"
