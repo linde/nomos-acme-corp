@@ -1,0 +1,79 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: httpbin-gw
+spec:
+  selector:
+    istio: ingressgateway 
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: httpbin-acme-prod
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - httpbin-gw
+  http:
+  - match:
+    - uri:
+        prefix: "/acme-prod"
+    rewrite:
+      uri: "/"
+    route:
+    - destination:
+        host: httpbin.acme-prod.svc.cluster.local
+        port:
+          number: 8000
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: httpbin-acme-qa
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - httpbin-gw
+  http:
+  - match:
+    - uri:
+        prefix: "/acme-qa"
+    rewrite:
+      uri: "/"
+    route:
+    - destination:
+        host: httpbin.acme-qa.svc.cluster.local
+        port:
+          number: 8000
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: httpbin-acme-dv
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - httpbin-gw
+  http:
+  - match:
+    - uri:
+        prefix: "/acme-dev"
+    rewrite:
+      uri: "/"
+    route:
+    - destination:
+        host: httpbin.acme-dev.svc.cluster.local
+        port:
+          number: 8000
+---
