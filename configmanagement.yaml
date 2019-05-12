@@ -4,9 +4,9 @@ metadata:
   name: config-management
   namespace: config-management-system
 spec:
-  clusterName: example-wp-cluster
+  clusterName: example-cluster-to-sync-crds
   git:
     syncRepo: git@github.com:linde/nomos-acme-corp.git
-    syncBranch: nomos-istio-crd-wp
     secretType: ssh
     policyDir: config-root
+    syncBranch: nomos-spark-crd
