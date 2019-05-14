@@ -17,8 +17,7 @@ apiVersion: "sparkoperator.k8s.io/v1beta1"
 kind: SparkApplication
 metadata:
   name: spark-pi
-#  namespace: default
-  namespace: acme-datascience-job1
+  namespace: default
 spec:
   type: Scala
   mode: cluster
