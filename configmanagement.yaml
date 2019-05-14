@@ -4,7 +4,7 @@ metadata:
   name: config-management
   namespace: config-management-system
 spec:
-  clusterName: my-cluster
+  clusterName: example-wordpress-per-namespace-cluster
   git:
     syncRepo: git@github.com:linde/nomos-acme-corp.git
     secretType: ssh
