@@ -9,3 +9,5 @@ spec:
     syncRepo: git@github.com:linde/nomos-acme-corp.git
     secretType: ssh
     policyDir: config-root
+    syncBranch: orchid-vanilla-test
+    
